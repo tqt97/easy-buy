@@ -1,0 +1,31 @@
+{
+  "name": "easy-buy",
+  "version": "1.0.0",
+  "description": "Easy Buy is a modern e-commerce platform designed to provide a seamless shopping experience for users",
+  "keywords": [
+    "ecommerce",
+    "react",
+    "laravel"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0",
+    "yarn": ">=1.22.0",
+    "php": ">=8.1.0",
+    "composer": ">=2.5.0",
+    "mysql": ">=8.0.0",
+    "laravel": ">=11.0.0",
+    "react": ">=19.0.0"
+  },
+  "main": "index.js",
+  "author": "tqt97",
+  "license": "ISC",
+  "repository": "https://github.com/tqt97/easy-buy",
+  "scripts": {
+    "install:app": "concurrently \"cd Frontend && npm install\" \"cd Backend && composer install\"",
+    "start": "concurrently \"cd Frontend && npm run dev\" \"cd Backend && php artisan serve\"",
+    "start:fe": "cd Frontend && npm run dev",
+    "start:be": "cd Backend && php artisan serve"
+  }
+}
